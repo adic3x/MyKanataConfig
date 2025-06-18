@@ -21,6 +21,8 @@
 )
 
 (deflayermap (gaming)
+  slck (layer-switch base)
+
   a a
   s s
   l l
