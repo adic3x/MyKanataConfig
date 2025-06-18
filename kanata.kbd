@@ -7,13 +7,13 @@
 )
 
 (deflayermap (base)
+  slck (layer-switch gaming)
+
   caps (layer-while-held extl)
   menu (layer-while-held ff)
   ; (tap-hold-press 250 250 ; (layer-while-held nav))
   ' (tap-hold-press 250 250 ' (layer-while-held extr))
   / (tap-hold-press 250 250 / (layer-while-held mouse))
-
-  slck (layer-switch gaming)
 
   a (tap-hold-press 250 250 a lctl)
   s (tap-hold-press 250 250 s lsft)
@@ -22,6 +22,12 @@
 
 (deflayermap (gaming)
   slck (layer-switch base)
+
+  caps (layer-while-held extl)
+  menu (layer-while-held ff)
+  ; (tap-hold-press 250 250 ; (layer-while-held nav))
+  ' (tap-hold-press 250 250 ' (layer-while-held extr))
+  / (tap-hold-press 250 250 / (layer-while-held mouse))
 
   a a
   s s
