@@ -1,0 +1,154 @@
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc                 ralt rctl
+)
+
+(deflayermap (base)
+  caps (layer-while-held extl)
+  menu (layer-while-held ff)
+  ; (tap-hold-press 250 250 ; (layer-while-held nav))
+  ' (tap-hold-press 250 250 ' (layer-while-held extr))
+  / (tap-hold-press 250 250 / (layer-while-held mouse))
+)
+
+(deflayermap (mouse)
+  e (movemouse-up 4 4)
+  s (movemouse-left 4 4)
+  d (movemouse-down 4 4)
+  f (movemouse-right 4 4)
+  u (mwheel-up 50 120)
+  m (mwheel-down 50 120)
+  c mlft
+  v mrgt
+  b mmid
+)
+
+(deflayermap (nav)
+  tab (macro end S-home S-home del del)
+  q esc
+  w home
+  e up
+  r end
+  t C-del
+
+  caps C-bspc
+  a bspc
+  s left
+  d down
+  f right
+  g del
+
+  z prnt
+  x ins
+  c C-left
+  v C-right
+
+  u pgup
+  i MediaTrackPrevious
+  o MediaTrackNext
+  h f2
+  j A-f4
+  k MediaPlayPause
+  b voldwn
+  n volu
+  m pgdn
+
+  spc S-ret
+)
+
+(deflayermap (ff)
+  a f1
+  s f2
+  d f3
+  f f4
+  g f5
+  h f6
+  j f7
+  k f8
+  l f9
+  ; f10
+  ' f11
+  ret f12
+)
+
+(deflayermap (extl)
+  q (unicode "!")
+  w (unicode "@")
+  e (unicode "#")
+  r (unicode "$")
+  t (unicode "%")
+  y (unicode "^")
+  u (unicode "&")
+  i (unicode "_")
+  o (unicode "|")
+  p \
+  [ (unicode "(")
+  ] (unicode ")")
+
+  a 1
+  s 2
+  d 3
+  f 4
+  g 5
+  h 6
+  j 7
+  k 8
+  l 9
+  ; 0
+
+  c =
+  v +
+  b (unicode "/")
+  n -
+  m (unicode "*")
+  , (unicode ";")
+  . (unicode ":")
+  / (unicode "?")
+
+  rsft (unicode r#"""#)
+
+  spc ret
+)
+
+(deflayermap (extr)
+  q (unicode "!")
+  w (unicode "@")
+  e (unicode "#")
+  r (unicode "$")
+  t (unicode "%")
+  y (unicode "^")
+  u (unicode "&")
+  i (unicode "_")
+  o (unicode "|")
+  p \
+  [ (unicode "(")
+  ] (unicode ")")
+
+  a 1
+  s 2
+  d 3
+  f 4
+  g 5
+  h 6
+  j 7
+  k 8
+  l 9
+  ; 0
+
+  c =
+  v +
+  b (unicode "/")
+  n -
+  m (unicode "*")
+  , (unicode ";")
+  . (unicode ":")
+  / (unicode "?")
+
+  tab (unicode "~")
+  caps `
+
+  spc ret
+)
