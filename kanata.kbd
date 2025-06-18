@@ -16,8 +16,8 @@
   slck (layer-switch gaming)
 
   a (tap-hold-press 250 250 a lctl)
-  s (tap-hold-press 250 250 a lsft)
-  l (tap-hold-press 250 250 a rsft)
+  s (tap-hold-press 250 250 s lsft)
+  l (tap-hold-press 250 250 l rsft)
 )
 
 (deflayermap (gaming)
@@ -70,7 +70,7 @@
 
   spc S-ret
 
-  l (tap-hold-press 250 250 a rsft)
+  l (tap-hold-press 250 250 l rsft)
 )
 
 (deflayermap (ff)
