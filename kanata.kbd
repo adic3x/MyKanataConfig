@@ -15,9 +15,13 @@
   ' (tap-hold-press 250 250 ' (layer-while-held extr))
   / (tap-hold-press 250 250 / (layer-while-held mouse))
 
-  a (tap-hold-press 250 250 a lctl)
-  s (tap-hold-press 250 250 s lsft)
-  l (tap-hold-press 250 250 l rsft)
+  a (tap-hold 150 175 a lctl)
+  s (tap-hold 150 175 s lsft)
+  d (tap-hold 150 175 d lalt)
+  f (tap-hold 150 175 f lmet)
+  j (tap-hold 150 175 j rctl)
+  k (tap-hold 150 175 k ralt)
+  l (tap-hold 150 175 l rsft)
 )
 
 (deflayermap (gaming)
@@ -31,6 +35,10 @@
 
   a a
   s s
+  d d
+  f f
+  j j
+  k k
   l l
 )
 
@@ -66,19 +74,22 @@
   c C-left
   v C-right
 
+  y A-f4
   u pgup
   i MediaTrackPrevious
   o MediaTrackNext
+  p MediaPlayPause
+
   h f2
-  j A-f4
-  k MediaPlayPause
   b voldwn
   n volu
   m pgdn
 
   spc S-ret
 
-  l (tap-hold-press 250 250 l rsft)
+  j (tap-hold 150 175 j rctl)
+  k (tap-hold 150 175 k ralt)
+  l (tap-hold 150 175 l rsft)
 )
 
 (deflayermap (ff)
