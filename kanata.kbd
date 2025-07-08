@@ -19,9 +19,16 @@
   s (tap-hold 150 175 s lsft)
   d (tap-hold 150 175 d lalt)
   f (tap-hold 150 175 f lmet)
+  h (tap-hold 150 175 h (layer-while-held lang))
   j (tap-hold 150 175 j rctl)
   k (tap-hold 150 175 k lalt)
   l (tap-hold 150 175 l rsft)
+)
+
+(deflayermap (lang)
+  a A-S-1
+  s A-S-2
+  d A-S-3
 )
 
 (deflayermap (gaming)
@@ -37,6 +44,7 @@
   s s
   d d
   f f
+  h h
   j j
   k k
   l l
@@ -84,6 +92,7 @@
   b voldwn
   n volu
   m pgdn
+  , A-f4
 
   spc S-ret
 
