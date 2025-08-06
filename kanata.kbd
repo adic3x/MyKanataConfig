@@ -96,9 +96,9 @@
 
   spc S-ret
 
-  j (tap-hold 150 175 j rctl)
-  k (tap-hold 150 175 k lalt)
-  l (tap-hold 150 175 l rsft)
+  j (tap-hold 150 175 C-tab rctl)
+  k (tap-hold 150 175 C-S-tab lalt)
+  l (tap-hold 150 175 A-tab rsft)
 )
 
 (deflayermap (extc)
