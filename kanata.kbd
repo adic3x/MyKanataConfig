@@ -9,23 +9,22 @@
 (deflayermap (base)
   slck (layer-switch gaming)
 
-  caps (layer-while-held extl)
-  menu (layer-while-held ff)
+  caps (tap-hold-press 250 250 C-a (layer-while-held extl))
   ; (tap-hold-press 250 250 ; (layer-while-held nav))
-  ' (tap-hold-press 250 250 ' (layer-while-held extr))
   / (tap-hold-press 250 250 / (layer-while-held mouse))
+  ;; spc (tap-dance 175 ((tap-hold 150 175 spc (layer-while-held extc)) spc))
+  spc (tap-hold 150 175 spc (layer-while-held extc))
 
   a (tap-hold 150 175 a lctl)
   s (tap-hold 150 175 s lsft)
   d (tap-hold 150 175 d lalt)
   f (tap-hold 150 175 f lmet)
-  h (tap-hold 150 175 h (layer-while-held lang))
+
   j (tap-hold 150 175 j rctl)
   k (tap-hold 150 175 k lalt)
   l (tap-hold 150 175 l rsft)
 
-  ;; spc (tap-dance 175 ((tap-hold 150 175 spc (layer-while-held extc)) spc))
-  spc (tap-hold 150 175 spc (layer-while-held extc))
+  c (tap-hold 150 175 c (layer-while-held lang))
 )
 
 (deflayermap (lang)
@@ -38,21 +37,20 @@
   slck (layer-switch base)
 
   caps (layer-while-held extl)
-  menu (layer-while-held ff)
   ; (tap-hold-press 250 250 ; (layer-while-held nav))
-  ' (tap-hold-press 250 250 ' (layer-while-held extr))
   / (tap-hold-press 250 250 / (layer-while-held mouse))
+  spc spc
 
   a a
   s s
   d d
   f f
-  h h
+
   j j
   k k
   l l
 
-  spc spc
+  c c
 )
 
 (deflayermap (mouse)
@@ -87,38 +85,20 @@
   c C-left
   v C-right
 
-  y A-f4
   u pgup
   i MediaTrackPrevious
   o MediaTrackNext
   p MediaPlayPause
 
-  h f2
   b voldwn
   n volu
   m pgdn
-  , A-f4
 
   spc S-ret
 
   j (tap-hold 150 175 j rctl)
   k (tap-hold 150 175 k lalt)
   l (tap-hold 150 175 l rsft)
-)
-
-(deflayermap (ff)
-  a f1
-  s f2
-  d f3
-  f f4
-  g f5
-  h f6
-  j f7
-  k f8
-  l f9
-  ; f10
-  ' f11
-  ret f12
 )
 
 (deflayermap (extc)
@@ -163,80 +143,18 @@
 
 
 (deflayermap (extl)
-  q (unicode "!")
-  w (unicode "@")
-  e (unicode "#")
-  r (unicode "$")
-  t (unicode "%")
-  y (unicode "^")
-  u (unicode "&")
-  i (unicode "_")
-  o (unicode "|")
-  p \
-  [ (unicode "(")
-  ] (unicode ")")
-
-  a 1
-  s 2
-  d 3
-  f 4
-  g 5
-  h 6
-  j 7
-  k 8
-  l 9
-  ; 0
-
-  c =
-  v +
-  b (unicode "/")
-  n -
-  m (unicode "*")
-  , (unicode ";")
-  . (unicode ":")
-  / (unicode "?")
-
-  rsft (unicode r#"""#)
-
-  spc ret
-)
-
-(deflayermap (extr)
-  q (unicode "!")
-  w (unicode "@")
-  e (unicode "#")
-  r (unicode "$")
-  t (unicode "%")
-  y (unicode "^")
-  u (unicode "&")
-  i (unicode "_")
-  o (unicode "|")
-  p \
-  [ (unicode "(")
-  ] (unicode ")")
-
-  a 1
-  s 2
-  d 3
-  f 4
-  g 5
-  h 6
-  j 7
-  k 8
-  l 9
-  ; 0
-
-  c =
-  v +
-  b (unicode "/")
-  n -
-  m (unicode "*")
-  , (unicode ";")
-  . (unicode ":")
-  / (unicode "?")
-
-  tab (unicode "~")
-  caps `
+  a f1
+  s f2
+  d f3
+  f f4
+  g f5
+  h f6
+  j f7
+  k f8
+  l f9
+  ; f10
+  ' f11
+  ret f12
 
   spc ret
 )
