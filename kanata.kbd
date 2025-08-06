@@ -23,6 +23,9 @@
   j (tap-hold 150 175 j rctl)
   k (tap-hold 150 175 k lalt)
   l (tap-hold 150 175 l rsft)
+
+  ;; spc (tap-dance 175 ((tap-hold 150 175 spc (layer-while-held extc)) spc))
+  spc (tap-hold 150 175 spc (layer-while-held extc))
 )
 
 (deflayermap (lang)
@@ -48,6 +51,8 @@
   j j
   k k
   l l
+
+  spc spc
 )
 
 (deflayermap (mouse)
@@ -115,6 +120,47 @@
   ' f11
   ret f12
 )
+
+(deflayermap (extc)
+  q (unicode "!")
+  w (unicode "@")
+  e (unicode "#")
+  r (unicode "$")
+  t (unicode "%")
+  y (unicode "^")
+  u (unicode "&")
+  i (unicode "_")
+  o (unicode "|")
+  p \
+  [ (unicode "(")
+  ] (unicode ")")
+
+  a 1
+  s 2
+  d 3
+  f 4
+  g 5
+  h 6
+  j 7
+  k 8
+  l 9
+  ; 0
+
+  c =
+  v +
+  b (unicode "/")
+  n -
+  m (unicode "*")
+  , (unicode ";")
+  . (unicode ":")
+  / (unicode "?")
+
+  tab (unicode "~")
+  caps `
+
+  rsft (unicode r#"""#)
+)
+
 
 (deflayermap (extl)
   q (unicode "!")
