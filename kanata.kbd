@@ -96,9 +96,13 @@
 
   spc S-ret
 
-  j (tap-hold 150 175 C-tab rctl)
-  k (tap-hold 150 175 C-S-tab lalt)
-  l (tap-hold 150 175 A-tab rsft)
+  ;; j (tap-hold 150 175 C-tab rctl)
+  ;; k (tap-hold 150 175 C-S-tab lalt)
+  ;; l (tap-hold 150 175 A-tab rsft)
+
+  j (tap-hold 150 175 j rctl)
+  k (tap-hold 150 175 k lalt)
+  l (tap-hold 150 175 l rsft)
 )
 
 (deflayermap (extc)
@@ -138,6 +142,7 @@
   tab (unicode "~")
   caps `
 
+  lsft spc
   rsft (unicode r#"""#)
 )
 
@@ -155,6 +160,12 @@
   ; f10
   ' f11
   ret f12
+
+  w C-z
+  r C-y
+
+  c C-S-tab
+  v C-tab
 
   spc ret
 )
